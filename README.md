@@ -1,5 +1,5 @@
 # Soeparno Enterprise
-###### Soeparno Enterprise Corporation is ...
+###### Soeparno Enterprise Corporation Tbk
 <!--
 **soeparnocorp/soeparnocorp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
