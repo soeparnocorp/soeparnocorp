@@ -1,4 +1,4 @@
-###### © 2025  Soeparno Enterprise Corporation
+###### © 2025  SOEPARNO ENTERPRISE Corp.
 
 <!--
 **soeparnocorp/soeparnocorp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
