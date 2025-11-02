@@ -1,4 +1,4 @@
-[profile-header] https://github.com/soeparnocorp/soeparnocorp_tower.png
+https://github.com/soeparnocorp/soeparnocorp/blob/main/soeparnocorp_tower.png
 ###### © 2025  SOEPARNO ENTERPRISE Corp.
 
 <!--
