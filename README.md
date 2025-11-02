@@ -1,4 +1,4 @@
-<a href="https://github.com/soeparnocorp/soeparnocorp/blob/main/soeparnocorp_tower.png"><img src="(soeparnocorp_tower.png)" width="250px"></a>
+<a href="https://raw.githubusercontent.com/soeparnocorp/soeparnocorp/refs/heads/main/assets/soeparnocorp_tower.png"><img src="(assets/soeparnocorp_tower.png)" width="1080px"></a>
 
 ###### © 2025  SOEPARNO ENTERPRISE Corp.
 
