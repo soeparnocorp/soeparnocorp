@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="id" data-layout="grid" data-theme="light" data-modules="hero,products,filters,pagination">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace - 1000+ Produk Terbaik dengan Harga Terjangkau</title>
+    <meta name="description" content="Temukan ribuan produk berkualitas dengan harga terbaik. Belanja mudah, aman, dan terpercaya. Gratis ongkir untuk pembelian minimal Rp100.000.">
+    <meta property="og:title" content="MarketPlace - 1000+ Produk Terbaik">
+    <meta property="og:description" content="Temukan ribuan produk berkualitas dengan harga terbaik. Belanja mudah, aman, dan terpercaya.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marketplace.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://marketplace.example.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <h1 class="text-2xl font-bold text-blue-600">MarketPlace</h1>
+                    <div class="hidden md:flex relative">
+                        <input type="text" id="searchInput" placeholder="Cari produk..." class="w-96 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <i data-lucide="search" class="absolute left-3 top-2.5 h-5 w-5 text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-blue-600">
+                        <i data-lucide="heart" class="h-6 w-6"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-blue-600 relative">
+                        <i data-lucide="shopping-cart" class="h-6 w-6"></i>
+                        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-blue-600">
+                        <i data-lucide="user" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-4">Belanja 1000+ Produk Pilihan</h2>
+                <p class="text-xl mb-8 opacity-90">Temukan produk terbaik dengan harga terjangkau, gratis ongkir se-Indonesia</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <i data-lucide="truck" class="h-5 w-5 inline mr-2"></i>
+                        Gratis Ongkir
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <i data-lucide="shield-check" class="h-5 w-5 inline mr-2"></i>
+                        Garansi Resmi
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                        <i data-lucide="clock" class="h-5 w-5 inline mr-2"></i>
+                        24/7 Support
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <aside class="lg:w-64 space-y-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="font-semibold mb-4">Kategori</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600" checked>
+                                <span class="ml-2">Elektronik</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2">Fashion</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2">Rumah Tangga</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2">Olahraga</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2">Kesehatan</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="font-semibold mb-4">Harga</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="text-blue-600">
+                                <span class="ml-2">< Rp 100.000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="text-blue-600">
+                                <span class="ml-2">Rp 100.000 - 500.000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="text-blue-600">
+                                <span class="ml-2">Rp 500.000 - 1.000.000</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="price" class="text-blue-600">
+                                <span class="ml-2">> Rp 1.000.000</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="font-semibold mb-4">Rating</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 flex items-center">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="ml-1 text-sm text-gray-600">(5)</span>
+                                </span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 flex items-center">
+                                    <span class="text-yellow-400">★★★★☆</span>
+                                    <span class="ml-1 text-sm text-gray-600">(4+)</span>
+                                </span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 flex items-center">
+                                    <span class="text-yellow-400">★★★☆☆</span>
+                                    <span class="ml-1 text-sm text-gray-600">(3+)</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gray-600">Menampilkan 1-20 dari 1000 produk</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <select class="border border-gray-300 rounded-lg px-3 py-2">
+                                <option>Terpopuler</option>
+                                <option>Harga Terendah</option>
+                                <option>Harga Tertinggi</option>
+                                <option>Rating Tertinggi</option>
+                                <option>Terbaru</option>
+                            </select>
+                            <div class="flex border border-gray-300 rounded-lg">
+                                <button class="p-2 bg-blue-600 text-white rounded-l-lg">
+                                    <i data-lucide="grid-3x3" class="h-4 w-4"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-r-lg">
+                                    <i data-lucide="list" class="h-4 w-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+                        <!-- Products will be generated by JavaScript -->
+                    </div>
+
+                    <div class="flex justify-center">
+                        <nav class="flex items-center space-x-2">
+                            <button class="px-3 py-2 text-gray-500 hover:text-blue-600 disabled:opacity-50" disabled>
+                                <i data-lucide="chevron-left" class="h-4 w-4"></i>
+                            </button>
+                            <button class="px-3 py-2 bg-blue-600 text-white rounded">1</button>
+                            <button class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded">2</button>
+                            <button class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded">3</button>
+                            <span class="px-3 py-2 text-gray-500">...</span>
+                            <button class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded">50</button>
+                            <button class="px-3 py-2 text-gray-500 hover:text-blue-600">
+                                <i data-lucide="chevron-right" class="h-4 w-4"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MarketPlace</h3>
+                    <p class="text-gray-400 mb-4">Platform belanja online terpercaya dengan ribuan produk berkualitas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Bantuan</a></li>
+                        <li><a href="#" class="hover:text-white">Pengiriman</a></li>
+                        <li><a href="#" class="hover:text-white">Pengembalian</a></li>
+                        <li><a href="#" class="hover:text-white">Garansi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white">Karir</a></li>
+                        <li><a href="#" class="hover:text-white">Press</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="h-4 w-4 mr-2"></i>
+                            +62 21 1234 5678
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="h-4 w-4 mr-2"></i>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="31585f575e715c50435a5445415d5052541f525e5c">[email&#160;protected]</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="map-pin" class="h-4 w-4 mr-2"></i>
+                            Jakarta, Indonesia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 MarketPlace. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Generate 1000 products
+        const categories = ['Elektronik', 'Fashion', 'Rumah Tangga', 'Olahraga', 'Kesehatan', 'Kecantikan', 'Otomotif', 'Mainan'];
+        const productNames = [
+            'Smartphone Android', 'Laptop Gaming', 'Headphone Wireless', 'Smartwatch', 'Kamera Digital',
+            'Kaos Premium', 'Sepatu Sneakers', 'Tas Ransel', 'Jaket Hoodie', 'Celana Jeans',
+            'Rice Cooker', 'Blender', 'Vacuum Cleaner', 'Air Fryer', 'Coffee Maker',
+            'Sepatu Lari', 'Matras Yoga', 'Dumbbell Set', 'Bola Basket', 'Raket Badminton',
+            'Vitamin C', 'Masker Wajah', 'Hand Sanitizer', 'Termometer Digital', 'Obat Herbal'
+        ];
+
+        const products = [];
+        for (let i = 1; i <= 1000; i++) {
+            const category = categories[Math.floor(Math.random() * categories.length)];
+            const name = productNames[Math.floor(Math.random() * productNames.length)];
+            const price = Math.floor(Math.random() * 2000000) + 50000;
+            const originalPrice = price + Math.floor(Math.random() * 500000);
+            const rating = (Math.random() * 2 + 3).toFixed(1);
+            const sold = Math.floor(Math.random() * 1000) + 10;
+            const discount = Math.floor(((originalPrice - price) / originalPrice) * 100);
+            
+            products.push({
+                id: i,
+                name: `${name} ${i}`,
+                category,
+                price,
+                originalPrice,
+                rating: parseFloat(rating),
+                sold,
+                discount,
+                image: `https://picsum.photos/300/300?random=${i}`
+            });
+        }
+
+        let currentPage = 1;
+        const itemsPerPage = 20;
+        let filteredProducts = [...products];
+
+        function renderProducts() {
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const currentProducts = filteredProducts.slice(startIndex, endIndex);
+            
+            const productGrid = document.getElementById('productGrid');
+            productGrid.innerHTML = '';
+            
+            currentProducts.forEach(product => {
+                const stars = '★'.repeat(Math.floor(product.rating)) + '☆'.repeat(5 - Math.floor(product.rating));
+                
+                const productCard = document.createElement('div');
+                productCard.className = 'bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden group';
+                productCard.innerHTML = `
+                    <div class="relative overflow-hidden">
+                        <div class="relative w-full" style="padding-top:75%">
+                            <img src="https://cdn.ailandingpage.ai/landingpage_io/5a79acc6-6802-4cbe-b109-c923b730dc35/5a79acc6-6802-4cbe-b109-c923b730dc35/product-${product.id}/882ba1c9db_0.png" 
+                                 alt="${product.name}" 
+                                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-200 block rounded-lg"
+                                 width="300" height="225" loading="lazy" decoding="async"
+                                 style="aspect-ratio:300/225;">
+                        </div>
+                        ${product.discount > 0 ? `<div class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">${product.discount}%</div>` : ''}
+                        <button class="absolute top-2 right-2 p-2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i data-lucide="heart" class="h-4 w-4 text-gray-600"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-gray-900 mb-2 line-clamp-2">${product.name}</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-yellow-400 text-sm">${stars}</span>
+                            <span class="text-gray-500 text-sm ml-1">(${product.rating})</span>
+                            <span class="text-gray-400 text-sm ml-2">${product.sold} terjual</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-lg font-bold text-blue-600">Rp ${product.price.toLocaleString('id-ID')}</span>
+                                ${product.discount > 0 ? `<span class="text-sm text-gray-500 line-through ml-2">Rp ${product.originalPrice.toLocaleString('id-ID')}</span>` : ''}
+                            </div>
+                        </div>
+                        <button class="w-full mt-3 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center">
+                            <i data-lucide="shopping-cart" class="h-4 w-4 mr-2"></i>
+                            Beli Sekarang
+                        </button>
+                    </div>
+                `;
+                productGrid.appendChild(productCard);
+            });
+            
+            // Re-initialize Lucide icons for new elements
+            lucide.createIcons();
+        }
+
+        function searchProducts() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(searchTerm) ||
+                product.category.toLowerCase().includes(searchTerm)
+            );
+            currentPage = 1;
+            renderProducts();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', searchProducts);
+
+        // Initial render
+        renderProducts();
+    </script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
