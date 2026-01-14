@@ -1,1 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #1f2933;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.25rem 0;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 3rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      line-height: 1.6;
+    }
+    .skills-list, .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .skills-list li, .contact-list li {
+      margin-bottom: 0.4rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .project-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 1rem;
+      background: #fafafa;
+    }
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .project-card p {
+      margin: 0 0 0.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .project-card a {
+      font-size: 0.9rem;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Satrio Soeparno</h1>
+    <p>Frontend Developer • Web Enthusiast</p>
+    <p>Berfokus pada pembuatan website yang sederhana, cepat, dan responsif.</p>
+  </header>
 
+  <main>
+    <!-- Tentang Saya -->
+    <section class="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah developer web yang tertarik pada teknologi modern dan pengalaman pengguna yang baik.
+        Terbiasa bekerja dengan HTML, CSS, dan JavaScript untuk membangun tampilan yang bersih dan mudah digunakan.
+      </p>
+    </section>
+
+    <!-- Keahlian -->
+    <section>
+      <h2>Keahlian</h2>
+      <ul class="skills-list">
+        <li>HTML5 &amp; CSS3 (Flexbox, Grid)</li>
+        <li>JavaScript dasar</li>
+        <li>Responsive Web Design</li>
+        <li>Version Control dengan Git</li>
+      </ul>
+    </section>
+
+    <!-- Proyek -->
+    <section>
+      <h2>Proyek Terpilih</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Landing Page Sederhana</h3>
+          <p>Landing page responsif untuk mempromosikan produk/jasa dengan desain minimalis.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Lihat proyek</a>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Pribadi</h3>
+          <p>Website portofolio untuk menampilkan profil, keahlian, dan daftar proyek.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Lihat proyek</a>
+        </div>
+        <div class="project-card">
+          <h3>Halaman Blog</h3>
+          <p>Template blog sederhana dengan daftar artikel dan halaman detail.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Lihat proyek</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section>
+      <h2>Kontak</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">github.com/username</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">linkedin.com/in/username</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Nama Kamu. Semua hak dilindungi.
+  </footer>
+
+  <script>
+    // Set tahun otomatis di footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
