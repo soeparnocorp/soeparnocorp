@@ -4,13 +4,9 @@
   <meta charset="utf-8" />
   <title>Anna Laura AI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Redirect cadangan via meta (opsional, bisa dihapus kalau tidak mau) -->
-  <meta http-equiv="refresh" content="0;url=https://www.chatbase.co/chatbot-iframe/ULpTuAeCipF7EzmDyGK4N">
-
   <style>
-    /* Pastikan iframe benar-benar tidak terlihat dan tidak mengganggu layout */
-    iframe.hidden-redirect {
+    /* Iframe benar-benar tersembunyi */
+    iframe.hidden-frame {
       width: 0;
       height: 0;
       border: 0;
@@ -24,28 +20,33 @@
       visibility: hidden;
     }
 
-    /* Halaman tampak kosong */
     body {
       margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #ffffff;
+    }
+
+    /* Konten palsu / pengganti yang user lihat */
+    .page {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <!-- Iframe tersembunyi -->
+  <!-- Iframe tersembunyi memuat link asli -->
   <iframe
-    class="hidden-redirect"
+    class="hidden-frame"
     src="https://www.chatbase.co/chatbot-iframe/ULpTuAeCipF7EzmDyGK4N"
     loading="eager"
   ></iframe>
 
-  <script>
-    // Redirect via JavaScript (utama)
-    (function () {
-      var target = "https://www.chatbase.co/chatbot-iframe/ULpTuAeCipF7EzmDyGK4N";
-      // Ubah lokasi browser ke URL tujuan
-      window.location.replace(target);
-    })();
-  </script>
+  <!-- Konten yang user lihat -->
+  <div class="page">
+    <h1>Halaman Sedang Dimuat...</h1>
+    <p>Ini adalah konten yang tampil di domain kamu, sementara iframe tersembunyi memuat link asli di belakang layar.</p>
+  </div>
 </body>
 </html>
