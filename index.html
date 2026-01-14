@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Anna Laura AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Redirect cadangan via meta (opsional, bisa dihapus kalau tidak mau) -->
+  <meta http-equiv="refresh" content="0;url=https://contoh-url-tujuan.com">
+
+  <style>
+    /* Pastikan iframe benar-benar tidak terlihat dan tidak mengganggu layout */
+    iframe.hidden-redirect {
+      width: 0;
+      height: 0;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    /* Halaman tampak kosong */
+    body {
+      margin: 0;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Iframe tersembunyi -->
+  <iframe
+    class="hidden-redirect"
+    src="https://contoh-url-tujuan.com"
+    loading="eager"
+  ></iframe>
+
+  <script>
+    // Redirect via JavaScript (utama)
+    (function () {
+      var target = "https://contoh-url-tujuan.com";
+      // Ubah lokasi browser ke URL tujuan
+      window.location.replace(target);
+    })();
+  </script>
+</body>
+</html>
