@@ -19,7 +19,7 @@ Our Division and Headquarters:
 
 # Visite Pages Hub
 
-📁 [Technology](tech/index.html)
+📁 [Tech](tech/index.html)
 📁 [Aerospace](aerospace/index.html)
 📁 [Defense](defense/index.html)
 📁 [Industries](industries/index.html)
