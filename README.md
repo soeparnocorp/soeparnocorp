@@ -8,7 +8,7 @@ Our Division and Headquarters:
 📁 [Aerospace](https://github.com/soeparnocorp/soeparnocorp/tree/main/aerospace)
 📁 [Defense](https://github.com/soeparnocorp/soeparnocorp/tree/main/defense)
 📁 [Industries](https://github.com/soeparnocorp/soeparnocorp/tree/main/industries)
-📁 [Steel](https://github.com/soeparnocorp/soeparnocorp/tree/main/energy)
+📁 [Steel](https://github.com/soeparnocorp/soeparnocorp/tree/main/steel)
 📁 [Energy](https://github.com/soeparnocorp/soeparnocorp/tree/main/energy)
 📁 [Medical](https://github.com/soeparnocorp/soeparnocorp/tree/main/medical)
 📁 [Chemicals](https://github.com/soeparnocorp/soeparnocorp/tree/main/chemicals)
