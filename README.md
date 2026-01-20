@@ -3,8 +3,8 @@
 ###### © 2025  SOEPARNO ENTERPRISE Corp.
 
 Our Division and Headquarters:
-~~~
-📁 Technology
+
+📁 [Technology](https://github.com/soeparnocorp/soeparnocorp/tree/main/tech)
 📁 Aerospace
 📁 Defense
 📁 Industries
@@ -16,4 +16,3 @@ Our Division and Headquarters:
 📁 Foods
 📁 Entertainment
 📁 Foundation
-~~~
