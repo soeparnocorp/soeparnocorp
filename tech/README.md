@@ -1,1 +1,1 @@
-# SOEPARNO Technology
+# SOEPARNO Tech
