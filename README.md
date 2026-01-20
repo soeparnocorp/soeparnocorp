@@ -16,3 +16,18 @@ Our Division and Headquarters:
 📁 [Foods](https://github.com/soeparnocorp/soeparnocorp/tree/main/foods)
 📁 [Entertainment](https://github.com/soeparnocorp/soeparnocorp/tree/main/entertainment)
 📁 [Foundation](https://github.com/soeparnocorp/soeparnocorp/tree/main/foundation)
+
+# Visite Pages Hub
+
+📁 [Technology](technology/index.html)
+📁 [Aerospace](aerospace/index.html)
+📁 [Defense](defense/index.html)
+📁 [Industries](industries/index.html)
+📁 [Steel](steel/index.html)
+📁 [Energy](energy/index.html)
+📁 [Medical](medical/index.html)
+📁 [Chemicals](chemicals/index.html)
+📁 [Shipping](shipping/index.html)
+📁 [Foods](foods/index.html)
+📁 [Entertainment](entertainment/index.html)
+📁 [Foundation](foundation/index.html)
