@@ -6,7 +6,7 @@ Our Division and Headquarters:
 
 📁 [Technology](https://github.com/soeparnocorp/soeparnocorp/tree/main/tech)
 📁 [Aerospace](https://github.com/soeparnocorp/soeparnocorp/tree/main/aerospace)
-📁 Defense
+📁 [Defense](https://github.com/soeparnocorp/soeparnocorp/tree/main/defense)
 📁 Industries
 📁 Steel
 📁 Energy
